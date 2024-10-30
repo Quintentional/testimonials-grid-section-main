@@ -63,7 +63,7 @@ h3 {
 
 .testimonial {
     margin-left: 2rem;
-    line-height: 18px;
+    line-height: 19px;
 }
 
 .daniel {
@@ -132,6 +132,11 @@ h3 {
     grid-area: patrick;
 }
 
+.patrick img {
+    width: 32px;
+    border: 2px solid hsl(263, 89%, 64%)
+}
+
 .patrick h2 {
     color: hsl(0, 0%, 100%);
     width: 29.5rem;
@@ -152,7 +157,7 @@ h3 {
 
 .kira h2 {
     color: hsl(217, 19%, 35%);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .kira h3 {
@@ -162,6 +167,89 @@ h3 {
 .kira p {
     color: hsl(217, 19%, 35%);
     width: 12rem;
+}
+
+@media(max-width: 375px) {
+
+    
+    #grid {
+        gap: 1.5rem;
+        grid-template-columns: 21rem;
+        grid-template-rows: 31.5rem 15rem 14rem 24rem 32rem;
+        grid-template-areas:
+        'daniel'
+        'jonathan' 
+        'jeanette'
+        'patrick'
+        'kira';
+    }
+
+    
+    img {
+        width: 28px;
+        height: 28px;
+    }
+    
+    h2 {
+        margin: 0 0 1rem 2rem;
+    }
+
+    .daniel {
+        margin-top: 3.5rem
+    }
+    
+    .daniel img {
+        width: 30px;
+        border: 2px solid hsl(263, 89%, 64%)
+    }
+    
+    .daniel h2 {
+        width: 16.35rem;
+    }
+
+    
+    .daniel p {
+        width: 15.2rem;
+    }
+    
+    .jonathan h2 {
+        width: 16rem
+    }
+    
+    
+    .jonathan p {
+        width: 16rem;
+    }
+    
+    .jeanette h2 {
+        width: 16rem;
+    }
+    
+    .jeanette p {
+        width: 16rem;
+    }
+    
+    .patrick h2 {
+        width: 16.5rem;
+    }
+    
+    .patrick p {
+        width: 16.1rem
+    }
+
+    .kira {
+        margin-bottom: 4rem;
+    }
+    
+    .kira h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .kira p {
+        width: 16rem;
+    }
+
+
 }
 
 
